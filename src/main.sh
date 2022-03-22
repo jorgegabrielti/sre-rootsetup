@@ -5,46 +5,21 @@
 # |                 Backup Shell                                         | #
 # +----------------------------------------------------------------------+ #
 # |                                                                      | #
-# | Name          : backup-keeper.sh                                     | #
-# | Function      : Backup of files                                      | #
+# | Name          : main.sh                                              | #
+# | Function      : startup sre tools install                            | #
 # | Version       : 1.0                                                  | #
-# | Author        : Jorge Gabriel (Support computer analyst)             | #
+# | Author        : Jorge Gabriel (SRE)                                  | #
 # | Email         : jorgegabriel.ti@gmail.com                            | #
-# | Creation date : 18-04-2021                                           | #
-# | Deploy date   : 19-04-2021, Jorge Gabriel (Support computer analyst) | #
-# | Last modified :                                                      | #
-# |                                                                      | #
 # +----------------------------------------------------------------------+ #
 # ##########################################################################
 #
 # Description:
 #
 # Algortimo do script :
+#  Install SRE tools for start work.
 #
-# For each job configuration listed in the configuration file
-# [conf/include/], this programa make:
-#
-#  1º - Create the backup;
-#
-#  2º - Caculate the backup size based in threshold and fragment
-#       it if necessary, making a hash for eac fragment;
-#
-#  3º - Call the function to assumes the role to consume the resource S3
-#
-#  4º - Call the function to copy backup to AWS S3
-#
-#
-#  Validations:
-#
-# ----------------------------------------------------------------------
-#
-# Historico
-#
-#     v1.0, Deploy script, [Thuesay Apr 27 20:00:00 2021] - Jorge Gabriel:
-#
-# TODO: 
-# - Fixe header
-# - Create comand line options
+
+
 set -e
 
 ### Alias eXpands
@@ -59,6 +34,8 @@ for FUNCTION in $(grep -F 'Test: [OK]' -l -r ${WORK_DIR}/function/); do
     source ${FUNCTION}
 done
 
+# Distro Detect
+distro_detect
 
 #
 #### Basic tools install
