@@ -4,3 +4,4 @@ curl
 wget
 mtr
 tcpdump
+netcat
