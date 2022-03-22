@@ -38,7 +38,9 @@ done
 distro_detect && \
   update_system
 
-#
+### Packages installations
+packages_install
+
 #### Basic tools install
 ## TODO: criar arquivo com lista de todos os utilitários
 ## e preencher um array para instalar. 
