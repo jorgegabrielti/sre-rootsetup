@@ -34,7 +34,7 @@ for FUNCTION in $(grep -F 'Test: [OK]' -l -r ${WORK_DIR}/function/); do
     source ${FUNCTION}
 done
 
-# Distro Detect
+### Distro Detect
 distro_detect
 
 #
