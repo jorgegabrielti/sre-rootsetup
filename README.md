@@ -1,11 +1,11 @@
-#### **SETUP to SRE start to work**
+# **Setup to SRE start to work**
 
 **Requiriments**:
 
 ![Badge](https://img.shields.io/badge/Ubuntu-v20.04-orange)
 ![Badge](https://img.shields.io/badge/Git-CLI-green)
 
-Git
+
 ```bash
 sudo apt update -y && \
   sudo apt install -y git curl
