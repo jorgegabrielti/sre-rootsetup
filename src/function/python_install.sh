@@ -18,7 +18,7 @@ python_install () {
     sudo curl ${PYTHON_DOWNLOAD_URL} \
       -o /opt/python.tar.xz 
     
-    tar Jxvf -C /opt/python.tar.xz
+    tar Jxvf /opt/python.tar.xz
     
     cd /opt/Python*
     
