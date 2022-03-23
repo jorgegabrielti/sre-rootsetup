@@ -1,6 +1,6 @@
 # Test: [OK]
-kind_install () { 
-  echo -e "\e[40;32;1m[TASK]: kind_install\e[m\n"
+kubectl_install () { 
+  echo -e "\e[40;32;1m[TASK]: kubectl\e[m\n"
   
   kubectl version --client > /dev/null 2>&1 
   
