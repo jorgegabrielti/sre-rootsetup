@@ -2,8 +2,8 @@
 
 **Requiriments**:
 
-![Badge](https://img.shields.io/badge/Ubuntu-v20.04-orange)
-![Badge](https://img.shields.io/badge/Git-CLI-green)
+[![Badge](https://img.shields.io/badge/Ubuntu-v20.04-orange)](https://ubuntu.com/download)
+[![Badge](https://img.shields.io/badge/Git-CLI-green)](https://git-scm.com/)
 
 
 ```bash
