@@ -4,12 +4,13 @@
 ### **Requisits**:
 - Git
 ```bash
-sudo apt install -y git
+sudo apt update -y && \
+  sudo apt install -y git
 ```
 
 #### First, clone the repository:
 ```bash
-git clone git@github.com:jorgegabrielti/sre-rootsetup.git
+git clone https://github.com/jorgegabrielti/sre-rootsetup.git
 ```
 
 #### Then, execute **sre-setup** script:
