@@ -12,7 +12,7 @@ sudo apt install -y git
 git clone git@github.com:jorgegabrielti/sre-rootsetup.git
 ```
 
-#### Then, execute **main.sh**:
+#### Then, execute **sre-setup** script:
 
 set permission:
 ```bash
