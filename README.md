@@ -1,5 +1,6 @@
 # SRE ROOT SETUP
-<font color=\"red\">Homologated: Ubuntu 20.04.</font>
+​​​​​​​<table><tr><td>**Homologated:**</td><td bgcolor=#4B0082>**Ubuntu 20.04.**</td></tr></table> 
+
 ### **SETUP to SRE start to work**
 
 ### **Requisits**:
