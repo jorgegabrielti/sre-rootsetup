@@ -48,41 +48,6 @@ python_install
 ## de artefatos não seja tão simples. Usar curl em seguida.
 #
 
-#### Programing tools
-## python
-#sudo apt install -y \
-#  build-essential \
-#  libssl-dev libffi-dev \
-#  python3-dev
-#
-#
-#PYTHON_DOWNLOAD_URL="$(curl -s https://www.python.org/downloads/ \
-#  | grep -F 'Download Python' \
-#  | grep -E '\.tar\.xz' \
-#  | grep -Eo 'https\:\/\/www\.python.org\/ftp\/python.*\.tar\.xz')"
-#
-#curl ${PYTHON_DOWNLOAD_URL} -o python.tar.xz 
-#
-#tar Jxvf python.tar.xz
-#
-#cd Python*
-#
-#./configure --enable-optimizations
-#
-#sudo make altinstall -j$(cat /proc/cpuinfo | grep -c processor)
-#
-#sudo update-alternatives \
-#  --install /usr/bin/python \
-#  python \
-#  /usr/local/bin/python3.10 1
-#
-#python -V
-#
-#sudo apt install -y \
-#  python3-venv python3-pip
-#
-#mkdir ~/python-projects/environments
-#
 #### Containers tools
 ## Docker
 #curl -fsSL https://get.docker.com -o get-docker.sh
