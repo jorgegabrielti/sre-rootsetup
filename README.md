@@ -12,6 +12,7 @@ Table of contents
    * [About](#about)
    * [Table of contents](#table-of-contents)
    * [Installation](#instalation)
+   * [Clone the repository](#clone-repo)
    * [How to use](#how-to)
 <!--te-->
 
