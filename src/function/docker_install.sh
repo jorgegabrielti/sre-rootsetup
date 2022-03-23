@@ -13,5 +13,6 @@ docker_install () {
     sudo sh get-docker.sh
     docker --version
     sudo rm -f get-docker.sh
+    usermod -aG docker ${USER}
   fi 
 }
