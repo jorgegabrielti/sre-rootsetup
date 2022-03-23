@@ -41,23 +41,10 @@ distro_detect && \
 ### Packages installations
 packages_install
 
-#### Basic tools install
-## TODO: criar arquivo com lista de todos os utilitários
-## e preencher um array para instalar. 
-#
 ## TODO: user firebug para sites cujo o download 
 ## de artefatos não seja tão simples. Usar curl em seguida.
 #
-#basic_tools_install () {
-#    for ((c=0 ; c<=10; c++)) 
-#    do 
-#      PACKAGE[$c]="$(cat tool_list.txt | head -n$(($c + 1)) | tail -n1)"
-#    done
-#
-#    sudo apt install -y ${PACKAGE[*]}
-#}
-#
-#
+
 #### Programing tools
 ## python
 #sudo apt install -y \
