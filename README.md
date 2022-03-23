@@ -1,9 +1,6 @@
 # **Setup to SRE start to work**
-
-**Requiriments**:
-
-[![Badge](https://img.shields.io/badge/Ubuntu-v20.04-orange)](https://ubuntu.com/download)
-[![Badge](https://img.shields.io/badge/Git-CLI-green)](https://git-scm.com/)
+[![Badge](https://img.shields.io/badge/Homologated-Ubuntu%20v20.04-orange)](https://ubuntu.com/download)
+[![Badge](https://img.shields.io/badge/Requirements-git--scm-green)](https://git-scm.com/)
 
 
 ```bash
