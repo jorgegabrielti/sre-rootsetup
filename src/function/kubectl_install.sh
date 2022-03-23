@@ -20,8 +20,17 @@ kubectl_install () {
       bash-completion
     source /usr/share/bash-completion/bash_completion
     bash && type _init_completion
-    echo 'source <(kubectl completion bash)' >>~/.bashrc
-    echo 'alias k=kubectl' >>~/.bashrc
-    echo 'complete -F __start_kubectl k' >>~/.bashrc
+
+    grep -F '### Kubectl' ~/.bashrc \
+      || echo -e "\n### Kubectl" >> ~/.bashrc
+    
+    grep -F 'source <(kubectl completion bash)' \
+      || echo 'source <(kubectl completion bash)' >> ~/.bashrc
+    
+    grep -F 'alias k=kubectl' \
+      || echo 'alias k=kubectl' >> ~/.bashrc
+    
+    grep -F 'complete -F __start_kubectl k' \
+      || echo 'complete -F __start_kubectl k' >> ~/.bashrc
   fi 
 }
