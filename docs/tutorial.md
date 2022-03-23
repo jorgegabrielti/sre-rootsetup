@@ -1,7 +1,7 @@
-# SRE - SETUP TOOLS ###
+# **SRE - SETUP TOOLS** ###
 
-## Development
-## Git (SCM - Source Code Managed)
+# **Development**
+## **Git (SCM - Source Code Managed)**
 ```bash
 sudo apt install -y git
 ```
@@ -24,9 +24,9 @@ git branch -M master
 git push -u origin master
 ```
 
-# Visualcode
+## **Visualcode**
 
-### Download
+#### Download
 https://code.visualstudio.com/download
 
 
@@ -34,10 +34,13 @@ https://code.visualstudio.com/download
 ```bash
 sudo dpkg -i code_1.65.2-1646927742_amd64.deb
 ```
-## **Plugins**
+### **Plugins**
 **File - Preferences - Configurations**
 
 #### **Plugins (Ctrl+Shift+X)**: https://marketplace.visualstudio.com/
+
+- Gitlens: https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
+
 - Bash IDE: https://marketplace.visualstudio.com/items?itemName=mads-hartmann.bash-ide-vscode
 
 - Bash Beautify: https://marketplace.visualstudio.com/items?itemName=shakram02.bash-beautify
@@ -55,12 +58,12 @@ sudo dpkg -i code_1.65.2-1646927742_amd64.deb
 - Kind: https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.kind-vscode
 
 
-### CLI Visualcode
+#### CLI Visualcode
 ```
 Ctrl-P
 ```
 
-### Top pluging installation
+#### Top pluging installation
 ```
 ext install mads-hartmann.bash-ide-vscode
 ext install shakram02.bash-beautify
@@ -70,9 +73,10 @@ ext install ms-kubernetes-tools.kind-vscode
 ext install ms-python.python
 ext install redhat.vscode-yaml
 ext install ZainChen.json
+ext install eamodio.gitlens
 ```
 
-## VSCode shortcuts
+### VSCode shortcuts
 - **Ctrl+Shift+X**  : plugins
 - **Ctrl+P**        : lista de arquivos/comandos do vscode
 - **Ctrl+P @**      : estruturas de programção em um arquivo
@@ -87,4 +91,36 @@ ext install ZainChen.json
 - **Ctrl+v**        : cola linha copiada
 - **Ctrl+Shift+d**  : debuger
 
+# **IaC**
+## **Virtualbox**
 
+#### Download
+https://download.virtualbox.org/virtualbox/6.1.32/virtualbox-6.1_6.1.32-149290~Ubuntu~eoan_amd64.deb
+
+**Requiriments**:
+```bash
+sudo apt install -y \
+  libqt5opengl5\
+  libsdl1.2debian
+```
+
+**Download package .deb**
+```bash
+curl https://download.virtualbox.org/virtualbox/6.1.32/virtualbox-6.1_6.1.32-149290~Ubuntu~eoan_amd64.deb -o virtualbox.deb
+```
+
+**Install package .deb**
+```bash
+sudo dpkg -i virtualbox-6.1_6.1.32-149290_Ubuntu_eoan_amd64.deb
+```
+
+## **Vagrant**
+**https://www.vagrantup.com/downloads**
+
+**Installation**
+```bash
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+sudo apt-get update && sudo apt-get install vagrant
+```
+More in: **https://github.com/jorgegabrielti/vagrant**
