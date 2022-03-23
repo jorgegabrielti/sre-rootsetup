@@ -24,13 +24,13 @@ kubectl_install () {
     grep -F '### Kubectl' ~/.bashrc \
       || echo -e "\n### Kubectl" >> ~/.bashrc
     
-    grep -F 'source <(kubectl completion bash)' \
+    grep -F 'source <(kubectl completion bash)' ~/.bashrc \
       || echo 'source <(kubectl completion bash)' >> ~/.bashrc
     
-    grep -F 'alias k=kubectl' \
+    grep -F 'alias k=kubectl' ~/.bashrc \
       || echo 'alias k=kubectl' >> ~/.bashrc
     
-    grep -F 'complete -F __start_kubectl k' \
+    grep -F 'complete -F __start_kubectl k' ~/.bashrc \
       || echo 'complete -F __start_kubectl k' >> ~/.bashrc
   fi 
 }
