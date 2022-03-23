@@ -53,27 +53,9 @@ docker_install
 ## kind
 kind_install
 
-## Install and configure kubectl
-#curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-#curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
-#
-#echo "$(<kubectl.sha256) kubectl" | sha256sum --check
-#sudo install \
-#  -o root \
-#  -g root \
-#  -m 0755 \
-#  kubectl /usr/local/bin/kubectl
-#
-#kubectl version --client
-#
-## Configure bash_completion
-#sudo apt-get install -y \
-#  bash-completion
-#source /usr/share/bash-completion/bash_completion
-#bash && type _init_completion
-#echo 'source <(kubectl completion bash)' >>~/.bashrc
-#echo 'alias k=kubectl' >>~/.bashrc
-#echo 'complete -F __start_kubectl k' >>~/.bashrc
+## Kubectl
+kubectl_install
+
 #
 #
 ## Lens
