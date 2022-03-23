@@ -41,6 +41,9 @@ distro_detect && \
 ### Packages installations
 packages_install
 
+### Python install
+python_install
+
 ## TODO: user firebug para sites cujo o download 
 ## de artefatos não seja tão simples. Usar curl em seguida.
 #
