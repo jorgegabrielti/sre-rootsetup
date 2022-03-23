@@ -2,7 +2,11 @@
 python_install () { 
   echo -e "\e[40;32;1m[TASK]: python_install\e[m\n"
   
-  if [[ $(python -V) ]]; then
+  python -V > /dev/null 2>&1
+
+  PYTHON_INSTALL_STATUS_CHECK="$?"
+
+  if [[ ${PYTHON_INSTALL_STATUS_CHECK} == "0" ]]; then
     echo -e "\t\e[40;33;1m[Python already installed]\e[m: \e[32;1m$(python -V)\e[m\n"
   else 
     sudo apt install -y \
@@ -44,6 +48,6 @@ python_install () {
     sudo apt install -y \
       python3-venv python3-pip
   fi
-  echo -e "\t\e[40;33;1m[Create a directory to your projects]\e[m: \e[32;1m$(echo ~/python-projects/environments)\e[m"
+  echo -e "\t\e[40;33;1m[Create a directory to your projects]\e[m: \e[32;1m$(echo ~/python-projects/environments)\e[m\n"
   mkdir -p ~/python-projects/environments
 }
