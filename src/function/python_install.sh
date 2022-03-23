@@ -3,7 +3,7 @@ python_install () {
   echo -e "\e[40;32;1m[TASK]: python_install\e[m\n"
   
   if [[ $(python -V) ]]; then
-    echo -e "\t\e[40;33;1m[Python already installed]\e[m: \e[32;1m$(python -V)\e[m"
+    echo -e "\t\e[40;33;1m[Python already installed]\e[m: \e[32;1m$(python -V)\e[m\n"
   else 
     sudo apt install -y \
       build-essential \
@@ -35,7 +35,7 @@ python_install () {
   fi 
   
   ### Check if pip install
-  echo -e "\e[40;32;1m[TASK]: pip installation\e[m\n"
+  echo -e "\e[40;32;1m[TASK]: pip_install\e[m\n"
   pip -V
   PIP_INSTALL_STATUS="$(echo $?)"
   if [ "$?" == "0" ]; then
@@ -44,6 +44,6 @@ python_install () {
     sudo apt install -y \
       python3-venv python3-pip
   fi
-
-  mkdir ~/python-projects/environments
+  echo -e "\t\e[40;33;1m[Create a directory to your projects]\e[m: \e[32;1m$(echo ~/python-projects/environments)\e[m"
+  mkdir -p ~/python-projects/environments
 }
