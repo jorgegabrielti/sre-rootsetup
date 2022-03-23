@@ -5,7 +5,7 @@
 Git
 ```bash
 sudo apt update -y && \
-  sudo apt install -y git
+  sudo apt install -y git curl
 ```
 
 #### First, clone the repository:
