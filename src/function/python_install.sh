@@ -33,11 +33,17 @@ python_install () {
     
     python -V
   fi 
-
-  if [[ $(pip -q) ]]; then
+  
+  ### Check if pip install
+  echo -e "\e[40;32;1m[TASK]: pip installation\e[m\n"
+  pip -V
+  PIP_INSTALL_STATUS="$(echo $?)"
+  if [ "$?" == "0" ]; then
     echo -e "\t\e[40;33;1m[Pip already installed]\e[m: \e[32;1m$(pip -V)\e[m"
   else 
     sudo apt install -y \
       python3-venv python3-pip
   fi
+
+  mkdir ~/python-projects/environments
 }
