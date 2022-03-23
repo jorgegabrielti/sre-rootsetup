@@ -19,9 +19,6 @@
 #  Install SRE tools for start work.
 #
 
-
-set -e
-
 ### Alias eXpands
 shopt -s expand_aliases
 
