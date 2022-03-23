@@ -17,8 +17,8 @@ git clone git@github.com:jorgegabrielti/sre-rootsetup.git
 set permission:
 ```bash
 cd sre-rootsetup
-chmod +x src/main
+chmod +x src/sre-setup
 ```
 ```bash
-src/main.sh
+src/sre-setup
 ```
