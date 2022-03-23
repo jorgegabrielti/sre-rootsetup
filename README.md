@@ -1,9 +1,10 @@
-# SRE ROOT SETUP
-### **Homologate**: **Ubuntu 20.04**
-
 #### **SETUP to SRE start to work**
 
-### **Requisits**:
+**Requiriments**:
+
+![Badge](https://img.shields.io/badge/Ubuntu-v20.04-orange)
+![Badge](https://img.shields.io/badge/Git-CLI-green)
+
 Git
 ```bash
 sudo apt update -y && \
@@ -25,3 +26,4 @@ chmod +x src/sre-setup
 ```bash
 src/sre-setup
 ```
+
