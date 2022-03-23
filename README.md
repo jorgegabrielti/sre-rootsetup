@@ -1,5 +1,5 @@
 # SRE ROOT SETUP
-​​​​​​​<table><tr><td>**Homologated:**</td><td bgcolor=#4B0082>**Ubuntu 20.04.**</td></tr></table> 
+​​​​​​​<table><tr><td>**Homologated:**</td><td bgcolor=#4B0082>**Ubuntu 20.04**</td></tr></table> 
 
 ### **SETUP to SRE start to work**
 
