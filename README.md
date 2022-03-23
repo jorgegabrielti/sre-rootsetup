@@ -1,8 +1,8 @@
 # SRE ROOT SETUP
-## SETUP to SRE start to work
+### **SETUP to SRE start to work**
 
 ### **Requisits**:
-- Git
+Git
 ```bash
 sudo apt update -y && \
   sudo apt install -y git
