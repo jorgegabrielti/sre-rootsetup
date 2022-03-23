@@ -93,6 +93,7 @@ ext install eamodio.gitlens
 
 # **IaC**
 ## **Virtualbox**
+<<<<<<< HEAD
 
 #### Download
 https://download.virtualbox.org/virtualbox/6.1.32/virtualbox-6.1_6.1.32-149290~Ubuntu~eoan_amd64.deb
@@ -104,6 +105,19 @@ sudo apt install -y \
   libsdl1.2debian
 ```
 
+=======
+
+#### Download
+https://download.virtualbox.org/virtualbox/6.1.32/virtualbox-6.1_6.1.32-149290~Ubuntu~eoan_amd64.deb
+
+**Requiriments**:
+```bash
+sudo apt install -y \
+  libqt5opengl5\
+  libsdl1.2debian
+```
+
+>>>>>>> ffec23a0b0d1642543deaff1f01fad1698bda706
 **Download package .deb**
 ```bash
 curl https://download.virtualbox.org/virtualbox/6.1.32/virtualbox-6.1_6.1.32-149290~Ubuntu~eoan_amd64.deb -o virtualbox.deb
@@ -115,12 +129,20 @@ sudo dpkg -i virtualbox-6.1_6.1.32-149290_Ubuntu_eoan_amd64.deb
 ```
 
 ## **Vagrant**
+<<<<<<< HEAD
 **https://www.vagrantup.com/downloads**
+=======
+https://www.vagrantup.com/downloads
+>>>>>>> ffec23a0b0d1642543deaff1f01fad1698bda706
 
 **Installation**
 ```bash
 curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 sudo apt-get update && sudo apt-get install vagrant
+<<<<<<< HEAD
 ```
 More in: **https://github.com/jorgegabrielti/vagrant**
+=======
+```
+>>>>>>> ffec23a0b0d1642543deaff1f01fad1698bda706
