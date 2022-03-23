@@ -1,7 +1,7 @@
 # SRE ROOT SETUP
-​​​​​​​<table><tr><td>**Homologated:**</td><td bgcolor=#4B0082>**Ubuntu 20.04**</td></tr></table> 
+### **Homologate**: **Ubuntu 20.04**
 
-### **SETUP to SRE start to work**
+#### **SETUP to SRE start to work**
 
 ### **Requisits**:
 Git
