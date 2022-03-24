@@ -30,14 +30,14 @@ for FUNCTION in $(grep -F 'Test: [OK]' -l -r ${WORK_DIR}/src/function/); do
 done
 
 ### System configurations
-distro_detect && \
+time distro_detect && \
   update_system
 
 ### Packages installations
-packages_install
+time packages_install
 
 ### Python install
-python_install
+time python_install
 
 ## TODO: user firebug para sites cujo o download 
 ## de artefatos não seja tão simples. Usar curl em seguida.
@@ -45,38 +45,31 @@ python_install
 
 #### Containers tools
 ## Docker
-docker_install
+time docker_install
 
 ## Kubernetes
 ## kind
-kind_install
+time kind_install
 
 ## Kubectl
-kubectl_install
+time kubectl_install
 
-#
-#
 ## istio
-#curl -L https://istio.io/downloadIstio | sh -
-#cd istio-*
-#
-#istioctl install \ 
-#  --set profile=default -y \
-#  --set meshConfig.accessLogFile=/dev/stdout
-#
+time istio_install
+
 #### IaC Tools
 ## Ansible
-ansible_install
+time ansible_install
 
 ## Vagrant
-vagrant_install 
+time vagrant_install 
 
 ## Terraform
-terraform_install 
+time terraform_install 
 
 #### Cloud Tools 
 ## aws-cli
-awscli_install
+time awscli_install
 
 #
 ## gcloud

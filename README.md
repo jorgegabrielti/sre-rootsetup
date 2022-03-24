@@ -36,6 +36,6 @@ cd sre-rootsetup
 chmod +x src/sre-setup
 ```
 ```bash
-src/sre-setup
+time src/sre-setup
 ```
 
