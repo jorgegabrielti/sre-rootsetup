@@ -17,9 +17,7 @@
 #
 # Algortimo do script :
 #  Install SRE tools for start work.
-#
-
-### Alias eXpands
+# --------------------------------------------------------------------------## Alias eXpands
 shopt -s expand_aliases
 
 ### Workdir
@@ -27,8 +25,8 @@ WORK_DIR="${PWD}"
 
 ### Import functions
 for FUNCTION in $(grep -F 'Test: [OK]' -l -r ${WORK_DIR}/src/function/); do
-    sed -i 's/\r$//' ${FUNCTION}
-    source ${FUNCTION}
+  sed -i 's/\r$//' ${FUNCTION}
+  source ${FUNCTION}
 done
 
 ### System configurations

@@ -35,7 +35,8 @@ python_install () {
       python \
       /usr/local/bin/python3.10 1
     
-    python -V
+    python -V && \
+      cd - && rm -rf /tmp/Python*
   fi 
   
   ### Check if pip install
