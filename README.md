@@ -35,7 +35,7 @@ Table of contents
 - [x] Vagrant
 - [x] Terraform
 - [x] aws
-- [ ] gcloud
+- [x] gcloud
 
 Installation
 ==========
