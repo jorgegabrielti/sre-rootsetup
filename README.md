@@ -18,12 +18,13 @@ Table of contents
 <!--ts-->
    * [About](#about)
    * [Table of contents](#table-of-contents)
+   * [Features](#features)
    * [Installation](#instalation)
    * [Clone the repository](#clone-repo)
    * [How to use](#how-to)
 <!--te-->
 
-### Features
+## Features
 - [x] Packages utils
 - [x] Python
 - [x] Docker
