@@ -12,5 +12,6 @@ awscli_install () {
     sudo ./aws/install
     aws --version
     rm -f awscliv2.zip
+    rm -rf aws
   fi 
 }
