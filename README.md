@@ -19,15 +19,15 @@ Table of contents
    * [About](#about)
    * [Table of contents](#table-of-contents)
    * [Features](#features)
-   * [Installation](#instalation)
+   * [Requirements](#requirements)
    * [Clone the repository](#clone-repo)
    * [How to use](#how-to)
 <!--te-->
 
-## Features
+## Feature
 - [x] Packages utils
 - [x] Python
-- [x] Docker
+- [x] Docker 
 - [x] Kind
 - [x] Kubectl
 - [x] Istio
@@ -37,7 +37,7 @@ Table of contents
 - [x] aws
 - [x] gcloud
 
-Installation
+Requirements
 ==========
 ```bash
 sudo apt update -y && \

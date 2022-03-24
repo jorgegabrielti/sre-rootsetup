@@ -47,16 +47,6 @@ time python_install
 ## Docker
 time docker_install
 
-## Kubernetes
-## kind
-time kind_install
-
-## Kubectl
-time kubectl_install
-
-## istio
-time istio_install
-
 #### IaC Tools
 ## Ansible
 time ansible_install
@@ -73,3 +63,13 @@ time awscli_install
 
 ## gcloud
 time gcloud_install
+
+## Kubernetes
+## kind
+time kind_install
+
+## istio
+time istio_install
+
+## Kubectl
+time kubectl_install

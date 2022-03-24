@@ -17,7 +17,7 @@ kubectl_install () {
     sudo apt-get install -y \
       bash-completion
     source /usr/share/bash-completion/bash_completion
-    bash && type _init_completion
+    bash && type _init_completion && exit
 
     grep -F '### Kubectl' ~/.bashrc \
       || echo -e "\n### Kubectl" >> ~/.bashrc
@@ -30,6 +30,6 @@ kubectl_install () {
     
     grep -F 'complete -F __start_kubectl k' ~/.bashrc \
       || echo 'complete -F __start_kubectl k' >> ~/.bashrc
-    exit 0
   fi 
+  rm -f kubectl kubectl_install
 }

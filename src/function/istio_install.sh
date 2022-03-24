@@ -11,6 +11,7 @@ istio_install () {
     cd istio-*
     sudo cp -v ./bin/istioctl "$(echo ${PATH} | grep -Fo '/usr/bin')/istioctl"
     istioctl version 2> /dev/null
+    cd -
     rm -rf istio-*
   fi 
 }

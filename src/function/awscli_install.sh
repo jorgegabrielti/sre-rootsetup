@@ -11,6 +11,6 @@ awscli_install () {
     unzip awscliv2.zip
     sudo ./aws/install
     aws --version
-    rm -f aws --version
+    rm -f awscliv2.zip
   fi 
 }
