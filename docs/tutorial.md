@@ -134,3 +134,5 @@ sudo apt-get update && sudo apt-get install vagrant
 ```
 More in: **https://github.com/jorgegabrielti/vagrant**
 
+## **Lens//THE KUBERNETES PLATFORM**
+**https://k8slens.dev/**

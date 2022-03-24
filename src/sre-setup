@@ -58,10 +58,6 @@ kubectl_install
 
 #
 #
-## Lens
-#https://api.k8slens.dev/binaries/Lens-5.4.1-latest.20220304.1.amd64.deb
-#
-#
 ## istio
 #curl -L https://istio.io/downloadIstio | sh -
 #cd istio-*
@@ -72,16 +68,8 @@ kubectl_install
 #
 #### IaC Tools
 ## Ansible
-#sudo apt install -y \
-#  software-properties-common
-#
-#sudo add-apt-repository --yes \
-#  --update ppa:ansible/ansible
-#
-#sudo apt install -y \
-#  ansible
-#
-#ansible --version
+ansible_install
+
 #
 ## Vagrant
 #curl -fsSL https://apt.releases.hashicorp.com/gpg \
