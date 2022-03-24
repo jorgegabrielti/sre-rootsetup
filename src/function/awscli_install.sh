@@ -1,9 +1,7 @@
 # Test: [OK]
 awscli_install () { 
   echo -e "\e[40;32;1m[TASK]: awscli_install\e[m\n"
-  
   aws --version > /dev/null 2>&1 
-  
   AWS_CLI_INSTALL_STATUS_CHECK="$?"
 
   if [[ ${AWS_CLI_INSTALL_STATUS_CHECK} == "0" ]]; then

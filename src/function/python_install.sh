@@ -1,9 +1,7 @@
 # Test: [OK]
 python_install () { 
   echo -e "\e[40;32;1m[TASK]: python_install\e[m\n"
-  
   python -V > /dev/null 2>&1
-
   PYTHON_INSTALL_STATUS_CHECK="$?"
 
   if [[ ${PYTHON_INSTALL_STATUS_CHECK} == "0" ]]; then
@@ -21,20 +19,14 @@ python_install () {
     
     sudo curl ${PYTHON_DOWNLOAD_URL} \
       -o /opt/python.tar.xz 
-    
     tar Jxvf /opt/python.tar.xz -C /tmp
-    
     cd /tmp/Python*
-    
     ./configure --enable-optimizations
-    
     sudo make altinstall -j$(cat /proc/cpuinfo | grep -c processor)
-    
     sudo update-alternatives \
       --install /usr/bin/python \
       python \
       /usr/local/bin/python3.10 1
-    
     python -V && \
       cd - && rm -rf /tmp/Python*
   fi 

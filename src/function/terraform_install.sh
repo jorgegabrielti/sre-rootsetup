@@ -1,9 +1,7 @@
 # Test: [OK]
 terraform_install () { 
   echo -e "\e[40;32;1m[TASK]: terraform_install\e[m\n"
-  
   terraform -v > /dev/null 2>&1 
-  
   TERRAFORM_INSTALL_STATUS_CHECK="$?"
 
   if [[ ${TERRAFORM_INSTALL_STATUS_CHECK} == "0" ]]; then

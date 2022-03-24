@@ -1,9 +1,7 @@
 # Test: [OK]
 vagrant_install () { 
   echo -e "\e[40;32;1m[TASK]: vagrant_install\e[m\n"
-  
   vagrant -v > /dev/null 2>&1 
-  
   VAGRANT_INSTALL_STATUS_CHECK="$?"
 
   if [[ ${VAGRANT_INSTALL_STATUS_CHECK} == "0" ]]; then

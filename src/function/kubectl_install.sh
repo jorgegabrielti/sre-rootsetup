@@ -1,9 +1,7 @@
 # Test: [OK]
 kubectl_install () { 
-  echo -e "\e[40;32;1m[TASK]: kubectl\e[m\n"
-  
+  echo -e "\e[40;32;1m[TASK]: kubectl\e[m\n" 
   kubectl version --client > /dev/null 2>&1 
-  
   KUBECTL_INSTALL_STATUS_CHECK="$?"
 
   if [[ ${KUBECTL_INSTALL_STATUS_CHECK} == "0" ]]; then
