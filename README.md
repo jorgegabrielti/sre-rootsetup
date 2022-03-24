@@ -9,10 +9,6 @@ Project aimed at the initial configuration of a setup with the main tools for th
 [![Badge](https://img.shields.io/badge/Requirements-git--scm-green)](https://git-scm.com/)
 
 
-<h4 align="center"> 
-	🚧 🚀 Building... 🚧
-</h4>
-
 Table of contents
 ==========
 <!--ts-->
