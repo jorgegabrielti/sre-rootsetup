@@ -31,5 +31,5 @@ kubectl_install () {
     grep -F 'complete -F __start_kubectl k' ~/.bashrc \
       || echo 'complete -F __start_kubectl k' >> ~/.bashrc
   fi 
-  rm -f kubectl kubectl_install
+  rm -f kubectl*
 }

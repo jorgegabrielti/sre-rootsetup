@@ -7,7 +7,7 @@ gcloud_install () {
   if [[ ${GCLOUD_INSTALL_STATUS_CHECK} == "0" ]]; then
     echo -e "\t\e[40;33;1m[gcloud already installed]\e[m: \e[32;1m$(gcloud version)\e[m\n"
   else 
-    echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" \
+    sudo echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" \
       | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
     sudo apt-get install -y apt-transport-https ca-certificates gnupg
     curl https://packages.cloud.google.com/apt/doc/apt-key.gpg \

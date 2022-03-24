@@ -30,14 +30,14 @@ for FUNCTION in $(grep -F 'Test: [OK]' -l -r ${WORK_DIR}/src/function/); do
 done
 
 ### System configurations
-time distro_detect && \
+distro_detect && \
   update_system
 
 ### Packages installations
-time packages_install
+packages_install
 
 ### Python install
-time python_install
+python_install
 
 ## TODO: user firebug para sites cujo o download 
 ## de artefatos não seja tão simples. Usar curl em seguida.
@@ -45,31 +45,34 @@ time python_install
 
 #### Containers tools
 ## Docker
-time docker_install
+docker_install
 
 #### IaC Tools
 ## Ansible
-time ansible_install
+ansible_install
 
 ## Vagrant
-time vagrant_install 
+vagrant_install 
 
 ## Terraform
-time terraform_install 
+terraform_install 
 
 #### Cloud Tools 
 ## aws-cli
-time awscli_install
+awscli_install
 
 ## gcloud
-time gcloud_install
+gcloud_install
 
 ## Kubernetes
 ## kind
-time kind_install
+kind_install
 
 ## istio
-time istio_install
+istio_install
 
 ## Kubectl
-time kubectl_install
+kubectl_install
+
+## Check
+check_packages_install
