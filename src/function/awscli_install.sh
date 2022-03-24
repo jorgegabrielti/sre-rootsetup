@@ -4,7 +4,7 @@ awscli_install () {
   
   aws --version > /dev/null 2>&1 
   
-  AWS CLI_INSTALL_STATUS_CHECK="$?"
+  AWS_CLI_INSTALL_STATUS_CHECK="$?"
 
   if [[ ${AWS CLI_INSTALL_STATUS_CHECK} == "0" ]]; then
     echo -e "\t\e[40;33;1m[AWS CLI already installed]\e[m: \e[32;1m$(aws --version)\e[m\n"
