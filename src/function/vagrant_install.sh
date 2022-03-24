@@ -14,5 +14,6 @@ vagrant_install () {
     sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
     sudo apt-get update -y \
       && sudo apt-get install -y vagrant
+    vagrant -v
   fi 
 }
