@@ -23,6 +23,19 @@ Table of contents
    * [How to use](#how-to)
 <!--te-->
 
+### Features
+- [x] Packages utils
+- [x] Python
+- [x] Docker
+- [x] Kind
+- [x] Kubectl
+- [x] Istio
+- [x] Ansible
+- [x] Vagrant
+- [x] Terraform
+- [x] aws
+- [ ] gcloud
+
 Installation
 ==========
 ```bash
