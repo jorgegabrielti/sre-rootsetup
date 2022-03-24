@@ -17,4 +17,3 @@ gcloud_install () {
     gcloud version
   fi 
 }
-gcloud_install
