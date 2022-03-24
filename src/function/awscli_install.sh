@@ -6,7 +6,7 @@ awscli_install () {
   
   AWS_CLI_INSTALL_STATUS_CHECK="$?"
 
-  if [[ ${AWS CLI_INSTALL_STATUS_CHECK} == "0" ]]; then
+  if [[ ${AWS_CLI_INSTALL_STATUS_CHECK} == "0" ]]; then
     echo -e "\t\e[40;33;1m[AWS CLI already installed]\e[m: \e[32;1m$(aws --version)\e[m\n"
   else 
     curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" \ 
