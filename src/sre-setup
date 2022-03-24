@@ -78,10 +78,8 @@ terraform_install
 
 #### Cloud Tools 
 ## aws-cli
-#curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" \ 
-#  -o "awscliv2.zip"
-#unzip awscliv2.zip
-#sudo ./aws/install
+awscli_install
+
 #
 ## gcloud
 #echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" \
