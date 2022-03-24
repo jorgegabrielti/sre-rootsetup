@@ -25,17 +25,17 @@ Table of contents
 <!--te-->
 
 ## Feature
-- [x] Packages utils
-- [x] Python
-- [x] Docker 
-- [x] Kind
-- [x] Kubectl
-- [x] Istio
-- [x] Ansible
-- [x] Vagrant
-- [x] Terraform
-- [x] aws
-- [x] gcloud
+- [x] [Packages utils](src/conf/packages.txt)
+- [x] [Python](https://www.python.org/downloads)
+- [x] [Docker](https://docs.docker.com/engine/install)
+- [x] [Kind](https://kind.sigs.k8s.io/)
+- [x] [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
+- [x] [Istio](https://istio.io/latest/docs/setup/getting-started/)
+- [x] [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
+- [x] [Vagrant](https://www.vagrantup.com/downloads)
+- [x] [Terraform](https://www.terraform.io/downloads)
+- [x] [aws](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+- [x] [gcloud](https://cloud.google.com/sdk/docs/install)
 
 Requirements
 ==========
