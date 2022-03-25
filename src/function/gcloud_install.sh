@@ -5,15 +5,14 @@ gcloud_install () {
   GCLOUD_INSTALL_STATUS_CHECK="$?"
 
   if [[ ${GCLOUD_INSTALL_STATUS_CHECK} == "0" ]]; then
-    echo -e "\t\e[40;33;1m[gcloud already installed]\e[m: \e[32;1m$(gcloud version)\e[m\n"
+    echo -e "\e[40;33;1m[gcloud already installed]\e[m:\n\e[32;1m$(gcloud version)\e[m\n"
   else 
-    sudo echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" \
-      | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
-    sudo apt-get install -y apt-transport-https ca-certificates gnupg
-    curl https://packages.cloud.google.com/apt/doc/apt-key.gpg \
-      | sudo apt-key \
-        --keyring /usr/share/keyrings/cloud.google.gpg add -
-    sudo apt-get update -y && sudo apt-get install -y google-cloud-sdk
+    curl -so gcloud-x86_64.tar.gz \
+      https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-309.0.0-linux-x86_64.tar.gz
+    tar zxvf gcloud-x86_64.tar.gz -C ~/
+    cd ~/google-cloud-sdk && ./install.sh
+    cd -
     gcloud version
+    rm -rf gcloud-x86_64.tar.gz 
   fi 
 }
