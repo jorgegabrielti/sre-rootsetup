@@ -5,7 +5,7 @@
 # |                 SRE ROOT SETUP                                       | #
 # +----------------------------------------------------------------------+ #
 # |                                                                      | #
-# | Name          : main.sh                                              | #
+# | Name          : sre-setup                                            | #
 # | Function      : startup sre tools install                            | #
 # | Version       : 1.0                                                  | #
 # | Author        : Jorge Gabriel (SRE)                                  | #
