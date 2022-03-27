@@ -91,6 +91,7 @@ ext install yzhang.markdown-all-in-one
 - **Ctrl+c**        : copia linha do cursor
 - **Ctrl+v**        : cola linha copiada
 - **Ctrl+Shift+d**  : debuger
+- **Ctrl+Shift+´**  : open terminal
 
 # **IaC**
 ## **Virtualbox**
