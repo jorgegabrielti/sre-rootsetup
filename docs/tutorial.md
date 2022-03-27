@@ -77,6 +77,7 @@ ext install redhat.vscode-yaml
 ext install ZainChen.json
 ext install eamodio.gitlens
 ext install yzhang.markdown-all-in-one
+ext install formulahendry.code-runner
 ```
 
 ### VSCode shortcuts
