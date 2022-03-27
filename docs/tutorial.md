@@ -58,6 +58,8 @@ sudo dpkg -i code_1.65.2-1646927742_amd64.deb
 - Kind: https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.kind-vscode
 
 - Markdown All in One: https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
+
+- Code Runner: https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner
 #### CLI Visualcode
 ```
 Ctrl-P
