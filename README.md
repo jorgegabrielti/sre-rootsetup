@@ -29,6 +29,7 @@ Table of contents
 - [x] [Istio](https://istio.io/latest/docs/setup/getting-started/)
 - [x] [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
 - [x] [Vagrant](https://www.vagrantup.com/downloads)
+- [x] [Packer](https://www.packer.io/) 
 - [x] [Terraform](https://www.terraform.io/downloads)
 - [x] [aws](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - [x] [gcloud](https://cloud.google.com/sdk/docs/install)
