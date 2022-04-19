@@ -79,6 +79,7 @@ ext install eamodio.gitlens
 ext install yzhang.markdown-all-in-one
 ext install formulahendry.code-runner
 ext install redhat.ansible
+ext install wholroyd.HCL
 ```
 
 ### VSCode shortcuts
