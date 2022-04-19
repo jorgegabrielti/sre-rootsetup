@@ -54,6 +54,9 @@ ansible_install
 ## Vagrant
 vagrant_install 
 
+## Packer
+packer_install
+
 ## Terraform
 terraform_install 
 
