@@ -81,6 +81,7 @@ ext install formulahendry.code-runner
 ext install redhat.ansible
 ext install wholroyd.HCL
 ext install marcostazi.VS-code-vagrantfile
+ext install SalemCode8.vagrant-manager
 ```
 
 ### VSCode shortcuts
