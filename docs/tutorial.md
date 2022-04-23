@@ -80,6 +80,7 @@ ext install yzhang.markdown-all-in-one
 ext install formulahendry.code-runner
 ext install redhat.ansible
 ext install wholroyd.HCL
+ext install marcostazi.VS-code-vagrantfile
 ```
 
 ### VSCode shortcuts
