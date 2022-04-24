@@ -82,6 +82,7 @@ ext install redhat.ansible
 ext install wholroyd.HCL
 ext install marcostazi.VS-code-vagrantfile
 ext install SalemCode8.vagrant-manager
+ext install bdavs.expect
 ```
 
 ### VSCode shortcuts
