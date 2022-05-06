@@ -34,7 +34,7 @@ Table of contents
 - [x] [aws](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - [x] [gcloud](https://cloud.google.com/sdk/docs/install)
 
-[comment]: <> Add security tools.
+[comment]: <> Add security tools. Prowler to AWS.
 
 Requirements
 ==========
