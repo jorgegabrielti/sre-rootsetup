@@ -81,12 +81,12 @@ ext install formulahendry.code-runner
 ext install redhat.ansible
 ext install wholroyd.HCL
 ext install marcostazi.VS-code-vagrantfile
-ext install SalemCode8.vagrant-manager
+ext install **SalemCode8**.vagrant-manager
 ext install bdavs.expect
 ext install HashiCorp.terraform
 ```
-
-### VSCode shortcuts
+****
+### VSCode **shortcuts**
 - **Ctrl+Shift+X**  : plugins
 - **Ctrl+P**        : lista de arquivos/comandos do vscode
 - **Ctrl+P @**      : estruturas de programção em um arquivo
